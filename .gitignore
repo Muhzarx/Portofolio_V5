@@ -1,3 +1,7 @@
+# ==============================
+# Node.js
+node_modules/
+
 # Logs
 logs
 *.log
@@ -7,20 +11,42 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Local env files (penting!)
+.env
+.env.*.local
 *.local
-# Ignore dist folder
+
+# Output directories
 dist/
 *.dist
 
-# Editor directories and files
+# Vercel & Netlify (kalau deploy ke situ)
+.vercel/
+.netlify/
+
+# macOS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
+
+# VSCode
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+
+# JetBrains / WebStorm / PhpStorm
+.idea/
+
+# Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+
+# VS Code Workspace Storage
+*.code-workspace
+
+# Others
 *.sw?
-*.env
+
+# ==============================
